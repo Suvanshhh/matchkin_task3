@@ -106,6 +106,12 @@ See the included Postman collection in `/postman` for example requests and paylo
 
 - Import the JSON file from the `/postman` folder into Postman to test all endpoints.
 
+- <img width="459" alt="image" src="https://github.com/user-attachments/assets/b6c40900-7413-46bb-8e4c-98a273fa3eec" />
+- <img width="459" alt="image" src="https://github.com/user-attachments/assets/1b420815-902b-43f1-b519-8b137dba666f" />
+- <img width="459" alt="image" src="https://github.com/user-attachments/assets/a556bf43-f428-47ab-ad66-7a9276df0008" />
+- <img width="459" alt="image" src="https://github.com/user-attachments/assets/b715989d-76c2-41ec-bb89-ceb9d9c76933" />
+
+
 ---
 
 ## Folder Structure
