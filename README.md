@@ -42,7 +42,7 @@ A full-stack mini project for a consultant-client matching platform, featuring O
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/matchkin-mini.git
+git clone https://github.com/Suvanshhh/matchkin_task3.git
 cd matchkin-mini
 ```
 
