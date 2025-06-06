@@ -3,7 +3,7 @@ import OTPRequestForm from "./components/OTPRequestForm";
 import OTPVerifyForm from "./components/OTPVerifyForm";
 import ProjectMatchForm from "./components/ProjectMatchForm";
 import MatchResults from "./components/MatchResults";
-import './App.css';
+import "./App.css";
 
 function App() {
   const [step, setStep] = useState(1);
@@ -24,14 +24,11 @@ function App() {
         />
       )}
       {step === 2 && (
-        <OTPVerifyForm
-          email={email}
-          onVerified={() => setStep(3)}
-        />
+        <OTPVerifyForm email={email} onVerified={() => setStep(3)} />
       )}
       {step === 3 && (
         <ProjectMatchForm
-          onResults={res => {
+          onResults={(res) => {
             setResults(res);
             setStep(4);
           }}

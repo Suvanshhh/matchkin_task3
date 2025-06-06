@@ -7,11 +7,15 @@ const authRoutes = require('./routes/authRoutes');
 const matchRoutes = require('./routes/matchRoutes');
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: process.env.FRONTEND_URL // Set this env variable to your frontend’s deployed URL
+}));
 app.use(express.json());
 
 app.use('/api/auth', authRoutes);
 app.use('/api', matchRoutes);
+
+app.get('/health', (req, res) => res.status(200).send('OK'));
 
 connectDB();
 
