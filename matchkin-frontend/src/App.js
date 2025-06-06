@@ -3,6 +3,7 @@ import OTPRequestForm from "./components/OTPRequestForm";
 import OTPVerifyForm from "./components/OTPVerifyForm";
 import ProjectMatchForm from "./components/ProjectMatchForm";
 import MatchResults from "./components/MatchResults";
+import './App.css';
 
 function App() {
   const [step, setStep] = useState(1);
