@@ -1,0 +1,106 @@
+{
+	"info": {
+		"_postman_id": "73838f9c-78a0-4e5d-84ad-b6aeee14ae6d",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40702623",
+		"_collection_link": "https://api777-0058.postman.co/workspace/matchkin~36d03dff-d40d-4783-a2ec-61fc0a17ce30/collection/40702623-73838f9c-78a0-4e5d-84ad-b6aeee14ae6d?action=share&source=collection_link&creator=40702623"
+	},
+	"item": [
+		{
+			"name": "Matchkin_Task3_RequestOtp",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"choudharysuvansh04@gmail.com\",\r\n  \"role\": \"client\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/auth/request-otp",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"auth",
+						"request-otp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Matchkin_Task3_VerifyOtp",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"choudharysuvansh04@gmail.com\",\r\n  \"otp\": \"461621\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/auth/verify-otp",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"auth",
+						"verify-otp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Matchkin_Task3_match",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NDFlMTA1MjBjOTJjOTBiNjcxNDA5NyIsInJvbGUiOiJjbGllbnQiLCJpYXQiOjE3NDkyMTMwMzMsImV4cCI6MTc0OTI5OTQzM30.UeRIILyFjJcExFrfzf7sxxWxUsxVuycbCJLFMhyncNA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"requiredSkills\": [\"Node.js\", \"MongoDB\"],\r\n  \"domains\": [\"backend\"],\r\n  \"timeline\": \"2025-07-01\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/match",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"match"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
